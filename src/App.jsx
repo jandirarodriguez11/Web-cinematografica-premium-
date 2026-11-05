@@ -15,6 +15,7 @@ import Acompanamientos from './components/Acompanamientos'
 import Filosofia from './components/Filosofia'
 import Reserva from './components/Reserva'
 import Footer from './components/Footer'
+import { asset } from './lib/asset'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -22,10 +23,15 @@ export default function App() {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
+    document.documentElement.style.setProperty(
+      '--grain-url',
+      `url(${asset('grain.svg')})`
+    )
+
     const minTime = new Promise((resolve) => setTimeout(resolve, 2200))
     const videoReady = new Promise((resolve) => {
       const video = document.createElement('video')
-      video.src = '/videos/hero.mp4'
+      video.src = asset('videos/hero.mp4')
       video.preload = 'auto'
       const done = () => resolve()
       video.addEventListener('canplaythrough', done, { once: true })

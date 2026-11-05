@@ -1,6 +1,7 @@
 import { useLayoutEffect, useRef } from 'react'
 import gsap from 'gsap'
 import VideoBackground from './VideoBackground'
+import { asset } from '../lib/asset'
 
 export default function ElCorte() {
   const root = useRef(null)
@@ -59,7 +60,7 @@ export default function ElCorte() {
 
         <div className="lg:col-span-7" data-frame>
           <div className="relative aspect-[4/5] md:aspect-[16/11] overflow-hidden">
-            <VideoBackground src="/videos/hero.mp4" />
+            <VideoBackground src={asset('videos/hero.mp4')} />
             <div className="absolute inset-0 bg-gradient-to-t from-void/70 via-transparent to-black/20" />
             <div className="absolute bottom-6 left-6 md:bottom-8 md:left-8">
               <p className="font-sans text-[10px] tracking-[0.4em] uppercase text-cream/80">

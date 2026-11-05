@@ -1,6 +1,7 @@
 import { useLayoutEffect, useRef } from 'react'
 import gsap from 'gsap'
 import VideoBackground from './VideoBackground'
+import { asset } from '../lib/asset'
 
 export default function Hero({ ready }) {
   const root = useRef(null)
@@ -50,7 +51,7 @@ export default function Hero({ ready }) {
       className="relative h-[100svh] overflow-hidden"
     >
       <div data-hero="video" className="absolute inset-0 scale-110">
-        <VideoBackground src="/videos/hero.mp4" />
+        <VideoBackground src={asset('videos/hero.mp4')} />
       </div>
 
       <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-black/40 to-void" />

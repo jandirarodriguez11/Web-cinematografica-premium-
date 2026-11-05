@@ -1,6 +1,7 @@
 import { useLayoutEffect, useRef } from 'react'
 import gsap from 'gsap'
 import VideoBackground from './VideoBackground'
+import { asset } from '../lib/asset'
 
 export default function Filosofia() {
   const root = useRef(null)
@@ -39,7 +40,7 @@ export default function Filosofia() {
       <div className="grid lg:grid-cols-2 min-h-[100svh]">
         <div className="relative min-h-[50vh] lg:min-h-full overflow-hidden">
           <div data-filo-video className="absolute inset-0 scale-110">
-            <VideoBackground src="/videos/ritual.mp4" />
+            <VideoBackground src={asset('videos/ritual.mp4')} />
           </div>
           <div className="absolute inset-0 bg-gradient-to-r from-transparent to-void/80 hidden lg:block" />
           <div className="absolute inset-0 bg-gradient-to-t from-void via-transparent to-black/30 lg:hidden" />

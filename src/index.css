@@ -62,7 +62,7 @@ body {
   z-index: 70;
   pointer-events: none;
   opacity: 0.055;
-  background-image: url('/grain.svg');
+  background-image: var(--grain-url, url('/grain.svg'));
   background-size: 180px 180px;
   mix-blend-mode: overlay;
 }

@@ -1,3 +1,5 @@
+import { asset } from '../lib/asset'
+
 export const cuts = [
   {
     name: 'Chuletón',
@@ -5,7 +7,7 @@ export const cuts = [
     aging: '45 días',
     price: '14,90',
     unit: '/100g',
-    image: '/images/chuleton.jpg',
+    image: asset('images/chuleton.jpg'),
   },
   {
     name: 'Tomahawk',
@@ -13,7 +15,7 @@ export const cuts = [
     aging: '30 días',
     price: '16,50',
     unit: '/100g',
-    image: '/images/tomahawk.jpg',
+    image: asset('images/tomahawk.jpg'),
   },
   {
     name: 'Txuleta',
@@ -21,7 +23,7 @@ export const cuts = [
     aging: '40 días',
     price: '15,90',
     unit: '/100g',
-    image: '/images/txuleta.jpg',
+    image: asset('images/txuleta.jpg'),
   },
   {
     name: 'Costillar',
@@ -29,7 +31,7 @@ export const cuts = [
     aging: '21 días',
     price: '13,50',
     unit: '/100g',
-    image: '/images/costillar.jpg',
+    image: asset('images/costillar.jpg'),
   },
   {
     name: 'Entrecot',
@@ -37,7 +39,7 @@ export const cuts = [
     aging: '45 días',
     price: '12,90',
     unit: '/100g',
-    image: '/images/entrecot.jpg',
+    image: asset('images/entrecot.jpg'),
   },
   {
     name: 'Solomillo',
@@ -45,7 +47,7 @@ export const cuts = [
     aging: '21 días',
     price: '18,00',
     unit: '/100g',
-    image: '/images/solomillo.jpg',
+    image: asset('images/solomillo.jpg'),
   },
 ]
 
@@ -54,37 +56,37 @@ export const sides = [
     name: 'Patatas a la brasa',
     note: 'Sal marina y romero',
     price: '8',
-    image: '/images/patatas.jpg',
+    image: asset('images/patatas.jpg'),
   },
   {
     name: 'Pimientos del padrón',
     note: 'Llama viva y flor de sal',
     price: '9',
-    image: '/images/pimientos.jpg',
+    image: asset('images/pimientos.jpg'),
   },
   {
     name: 'Espárragos a la llama',
     note: 'Aceite de oliva y limón',
     price: '12',
-    image: '/images/esparragos.jpg',
+    image: asset('images/esparragos.jpg'),
   },
   {
     name: 'Pan de masa madre',
     note: 'Mantequilla ahumada',
     price: '6',
-    image: '/images/pan.jpg',
+    image: asset('images/pan.jpg'),
   },
   {
     name: 'Ensalada de temporada',
     note: 'Hojas amargas y vinagreta',
     price: '11',
-    image: '/images/ensalada.jpg',
+    image: asset('images/ensalada.jpg'),
   },
   {
     name: 'Pimiento asado',
     note: 'Confitado en su jugo',
     price: '10',
-    image: '/images/pimiento.jpg',
+    image: asset('images/pimiento.jpg'),
   },
 ]
 

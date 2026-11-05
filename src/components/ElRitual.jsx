@@ -2,6 +2,7 @@ import { useLayoutEffect, useRef } from 'react'
 import gsap from 'gsap'
 import VideoBackground from './VideoBackground'
 import { ritual } from '../data/content'
+import { asset } from '../lib/asset'
 
 export default function ElRitual() {
   const root = useRef(null)
@@ -42,7 +43,7 @@ export default function ElRitual() {
       ref={root}
       className="relative min-h-[100svh] flex flex-col justify-end overflow-hidden"
     >
-      <VideoBackground src="/videos/ritual.mp4" />
+      <VideoBackground src={asset('videos/ritual.mp4')} />
       <div className="absolute inset-0 bg-gradient-to-t from-void via-black/55 to-black/30" />
 
       <div className="relative z-10 px-6 md:px-12 lg:px-16 pt-32 pb-16 md:pb-20">

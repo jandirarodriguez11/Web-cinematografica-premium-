@@ -2,6 +2,7 @@ import { useLayoutEffect, useRef } from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import VideoBackground from './VideoBackground'
+import { asset } from '../lib/asset'
 
 const embers = Array.from({ length: 22 }, (_, i) => ({
   id: i,
@@ -56,7 +57,7 @@ export default function LaBrasa() {
   return (
     <section id="brasa" ref={root} className="relative h-[220vh] bg-void">
       <div className="sticky top-0 h-[100svh] overflow-hidden">
-        <VideoBackground src="/videos/brasa.mp4" />
+        <VideoBackground src={asset('videos/brasa.mp4')} />
         <div className="absolute inset-0 bg-black/45" />
         <div ref={heat} className="heat-glow absolute inset-0 pointer-events-none" />
 
